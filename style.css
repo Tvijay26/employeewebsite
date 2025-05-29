@@ -1,0 +1,112 @@
+/* Reset some basic elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: lightgoldenrodyellow;
+  color: #333;
+  padding: 40px;
+  line-height: 1.6;
+}
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+  border-left: 5px solid #007BFF;
+  padding-left: 10px;
+}
+
+input, select, textarea, button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.error {
+  color: #d8000c;
+  background-color: #ffdddd;
+  padding: 8px;
+  margin-top: 5px;
+  border-left: 4px solid #d8000c;
+  max-width: 500px;
+  border-radius: 4px;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+#results {
+  margin-top: 30px;
+}
+
+.result-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.result-card strong {
+  color: #007BFF;
+}
+
+#login-section, #app-section {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#search-section {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  input, select, textarea, button {
+    max-width: 100%;
+  }
+
+  #login-section, #app-section {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-section">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="login-error" class="error"></p>
+  </div>
+
+  <div id="app-section" style="display: none;">
+    <h2>Add Employee</h2>
+    <form id="employee-form" onsubmit="return addEmployee(event)">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="middleName" placeholder="Middle Name">
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="date" id="dob" required>
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option>Engineering</option>
+        <option>Support</option>
+        <option>HR</option>
+        <option>Finance</option>
+      </select>
+      <input type="number" id="salary" placeholder="Salary" required>
+      <textarea id="permAddress" placeholder="Permanent Address" required></textarea>
+      <textarea id="currAddress" placeholder="Current Address" required></textarea>
+      <input type="file" id="idProof" accept="application/pdf" required>
+      <button type="submit">Add Employee</button>
+    </form>
+
+    <h2>Search Employees</h2>
+    <div id="search-section">
+      <input type="text" id="searchId" placeholder="Employee ID">
+      <input type="text" id="searchFname" placeholder="First Name">
+      <input type="text" id="searchLname" placeholder="Last Name">
+      <input type="text" id="searchLogin" placeholder="Login ID">
+      <input type="date" id="dobFrom" placeholder="DOB From">
+      <input type="date" id="dobTo" placeholder="DOB To">
+      <select id="searchDept">
+        <option value="">All Departments</option>
+        <option>Engineering</option>
+        <option>Support</option>
+        <option>HR</option>
+        <option>Finance</option>
+      </select>
+      <button onclick="performSearch()">Search</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
