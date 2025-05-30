@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>College website</h1>
+    <select id="collegeDropdown" onchange="showCollegeData()">
+      <option value="">-- Select College --</option>
+      <option value="kits">KITS Institute of Technology</option>
+      <option value="a1">A1 Engineering College</option>
+      <option value="xyz">XYZ University</option>
+      <option value="Sgit">Sgit University</option>
+      <option value="vijay">vijay University</option>
+      <option value="karthik">karthik University</option>
+      <option value="Sri">sri vidya collage</option>
+      <option value="sai">Sai techno University</option>
+      <option value="jeevan">jeevan jyothi University</option>
+    </select>
+
+    <div id="collegeInfo" class="info-box">
+      <p>Please select a college from the dropdown above.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
